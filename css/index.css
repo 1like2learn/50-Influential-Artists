@@ -85,7 +85,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px grey solid;
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -105,6 +104,11 @@ header nav {
   width: 100%;
   padding: 4%;
 }
+@media ((max-width:500px)) {
+  header nav {
+    padding: 7%;
+  }
+}
 header nav a {
   text-decoration: none;
   color: black;
@@ -117,6 +121,11 @@ header nav a a:visited {
 header nav a a:link {
   color: black;
 }
+@media ((max-width:500px)) {
+  header nav a {
+    font-size: 1.2rem;
+  }
+}
 header nav a a.current-page {
   font-weight: bold;
 }
@@ -127,14 +136,20 @@ header nav a a.middle {
 section.title-container {
   background-image: url('../assets/home.png');
   background-size: cover;
-  background-repeat: no-repat;
+  background-repeat: no-repeat;
   max-width: 1200px;
-  width: 80%;
-  margin: 0 auto;
+  width: 75%;
+  margin: 0 auto 3% auto;
+  border-bottom: 1px black solid;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media ((max-width:500px)) {
+  section.title-container {
+    width: 100%;
+  }
 }
 section.title-container h1 {
   padding-top: 20%;
@@ -143,39 +158,73 @@ section.title-container h1 {
   text-align: center;
   color: white;
 }
+@media ((max-width:500px)) {
+  section.title-container h1 {
+    font-size: 2rem;
+    padding-top: 30%;
+  }
+}
 section.title-container button {
   background-color: white;
   padding: 0.5% 2%;
   font-size: 1.2rem;
-  margin-bottom: 10%;
+  margin: 1% 0 10% 0;
 }
 section.artists-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   max-width: 1200px;
-  width: 80%;
+  width: 85%;
+  padding-top: 1%;
   margin: 0 auto;
+  border-top: 3px #9b9999 solid;
+}
+@media ((max-width:500px)) {
+  section.artists-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 section.artists-container div.artist {
   width: 44%;
+  padding: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+@media ((max-width:500px)) {
+  section.artists-container div.artist {
+    width: 50%;
+    align-content: center;
+    padding: 4% 0;
+  }
+}
 section.artists-container div.artist img {
   width: 80%;
-  border-radius: 10px;
+  border-radius: 5px;
+  height: auto;
 }
 section.artists-container div.artist a {
   text-decoration: none;
   color: black;
   font-size: 1.4rem;
+  padding: 4%;
+  text-align: center;
 }
 section.artists-container div.artist a a:visited {
   color: black;
 }
 section.artists-container div.artist a a:link {
   color: black;
+}
+@media ((max-width:500px)) {
+  section.artists-container div.artist a {
+    font-size: 1.2rem;
+  }
+}
+section.artists-container div.artist div.bio {
+  text-align: center;
 }

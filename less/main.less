@@ -1,42 +1,70 @@
 section.title-container{
     background-image: url('../assets/home.png');
     background-size: cover;
-    background-repeat: no-repat;
+    background-repeat: no-repeat;
     max-width: 1200px;
-    width: 80%;
-    margin:0 auto;
+    width: 75%;
+    margin: 0 auto 3% auto;
+    border-bottom: 1px black solid;
     .flexbox();
     flex-direction: column;
+    @media(@mobile){
+        width: 100%;
+    }
     h1{
         padding-top: 20%; 
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
-        color: white
+        color: white;
+        @media(@mobile){
+            font-size: 2rem;
+            padding-top: 30%;
+        }
     }//h1
     button{
-        background-color: white;
-        padding: 0.5% 2%;
-        font-size: 1.2rem;
-        margin-bottom: 10%;
+        .contact-us(white, 1.2rem)
     }
 }//section.title-container
 section.artists-container{
     .flexbox(@align:flex-start);
     max-width: 1200px;
-    width: 80%;
+    width: 85%;
+    padding-top:1%;
     margin: 0 auto;
+    border-top: 3px rgb(155, 153, 153) solid;
+    @media(@mobile){
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
     div.artist{
         width: 44%;
+        padding: 2%;
         .flexbox();
         flex-direction: column;
+        @media (@mobile) {
+            width: 50%;
+            align-content: center;
+            padding: 4% 0;
+
+        }
         img{
             width: 80%;
-            border-radius: 10px;
-        }
+            border-radius: 5px;
+            height: auto;
+        }//img
         a{
             .linkStyle();
             font-size: 1.4rem;
+            padding: 4%;
+            text-align: center;
+            @media(@mobile){
+                font-size: 1.2rem;
+            }
+        }//a
+        div.bio{
+            text-align: center;
         }
     }//div.artist
 }//section.artists-container
