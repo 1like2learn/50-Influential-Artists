@@ -1,0 +1,42 @@
+section.title-container{
+    background-image: url('../assets/home.png');
+    background-size: cover;
+    background-repeat: no-repat;
+    max-width: 1200px;
+    width: 80%;
+    margin:0 auto;
+    .flexbox();
+    flex-direction: column;
+    h1{
+        padding-top: 20%; 
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        color: white
+    }//h1
+    button{
+        background-color: white;
+        padding: 0.5% 2%;
+        font-size: 1.2rem;
+        margin-bottom: 10%;
+    }
+}//section.title-container
+section.artists-container{
+    .flexbox(@align:flex-start);
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    div.artist{
+        width: 44%;
+        .flexbox();
+        flex-direction: column;
+        img{
+            width: 80%;
+            border-radius: 10px;
+        }
+        a{
+            .linkStyle();
+            font-size: 1.4rem;
+        }
+    }//div.artist
+}//section.artists-container

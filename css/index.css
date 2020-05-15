@@ -1,4 +1,181 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 1px grey solid;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4%;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0 1%;
+  font-size: 1.6rem;
+}
+header nav a a:visited {
+  color: black;
+}
+header nav a a:link {
+  color: black;
+}
+header nav a a.current-page {
+  font-weight: bold;
+}
+header nav a a.middle {
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+}
+section.title-container {
+  background-image: url('../assets/home.png');
+  background-size: cover;
+  background-repeat: no-repat;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.title-container h1 {
+  padding-top: 20%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+section.title-container button {
+  background-color: white;
+  padding: 0.5% 2%;
+  font-size: 1.2rem;
+  margin-bottom: 10%;
+}
+section.artists-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+section.artists-container div.artist {
+  width: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.artists-container div.artist img {
+  width: 80%;
+  border-radius: 10px;
+}
+section.artists-container div.artist a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+}
+section.artists-container div.artist a a:visited {
+  color: black;
+}
+section.artists-container div.artist a a:link {
+  color: black;
+}
